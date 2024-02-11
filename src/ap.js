@@ -6,6 +6,7 @@ function updateWeatherInfo(response) {
     let humidity = document.querySelector("#humidity");
     let wind = document.querySelector("#wind");
     let timeElement = document.querySelector("#time");
+    let icon = document.querySelector("#icon");
 
     let date = new Date(response.data.time * 1000);
     let temperature = response.data.temperature.current;
@@ -16,6 +17,7 @@ function updateWeatherInfo(response) {
     humidity.innerHTML = `${response.data.temperature.humidity}%`;
     wind.innerHTML = `${response.data.wind.speed}km/h`;
     timeElement.innerHTML = formatDate(date);
+    icon.innerHTML = `<img src="${response.data.condition.icon_url}" class = "weather-app-icon"/>`;
 }
 
 function formatDate (date) {
