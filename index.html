@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>meteo_simple_app</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <main>
             <div class="main-wrapper">
                 <div class="main-wrapper__weather-data">
-                    <h1 class="main-wrapper__city" id="city">Bremen</h1>
+                    <h1 class="main-wrapper__city" id="city"></h1>
                     <p class="main-wrapper__details">
                         Friday 11:19, light intensity drizzle
                         <br>
@@ -29,7 +30,7 @@
                 </div>
                 <div class="weather-data-cntainer">
                     <div class="weather-data-container__icon">🌧️</div>
-                    <div class="weather-data-container__value">2</div>
+                    <div class="weather-data-container__value" id="temperature"></div>
                     <div class="weather-data-container__unit">°C</div>
                 </div>
             </div>
