@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style.css">
     <title>meteo_simple_app</title>
 </head>
 <body>
-    <header>
-        <form action="">
-            <input type="search" placeholder="Enter a city">
-            <input type="submit" value="search">
-        </form>
-    </header>
-    <main>
-        <h1>Bremen</h1>
-        <div>
-            <p>
-                Friday 11:19, light intensity drizzle
-                <br>
-                Humidity: 99%, Wind: 5.14km/h
-            </p>
-        </div>
-        <div>
-            🌧️2°C
-        </div>
-    </main>
-    <footer>
-        This project was coded by 
-        <a href="https://github.com/Marys888">Maria Sievierova</a> is 
-        <a href="https://github.com/Marys888/meteo_simple_app">open-sourced on GitHub</a> and 
-        <a href="https://meteo-simple-app.netlify.app/">hosted on Netlify</a>
-    </footer>
+    <div class="app-container">
+        <header>
+            <form action="" class="form">
+                <input type="search" placeholder="Enter a city" class="form__input">
+                <input type="submit" value="Search" class="form__search-button">
+            </form>
+        </header>
+        <main>
+            <div class="main-wrapper">
+                <div class="main-wrapper__weather-data">
+                    <h1 class="main-wrapper__city">Bremen</h1>
+                    <p class="main-wrapper__details">
+                        Friday 11:19, light intensity drizzle
+                        <br>
+                        Humidity: <strong>99%</strong>, Wind: <strong>5.14km/h</strong>
+                    </p>
+                </div>
+                <div class="weather-data-cntainer">
+                    <div class="weather-data-container__icon">🌧️</div>
+                    <div class="weather-data-container__value">2</div>
+                    <div class="weather-data-container__unit">°C</div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            This project was coded by
+            <a href="https://github.com/Marys888">Maria Sievierova</a> is
+            <a href="https://github.com/Marys888/meteo_simple_app">open-sourced on GitHub</a> and
+            <a href="https://meteo-simple-app.netlify.app/">hosted on Netlify</a>
+        </footer>
+    </div>
     <script src="./src/ap.js"></script>
 </body>
 </html>

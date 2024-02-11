@@ -1,3 +1,75 @@
 body {
     margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.app-container {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 30px 50px rgba(180, 212, 238, 0.438);
+    border-radius: 15px;
+}
+header {
+    border-bottom: 1px solid #a7becb;
+    padding-bottom: 30px;
+    
+}
+.form__input {
+    background-color: rgba(228, 244, 248, 0.525);
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 15px 20px;
+}
+.form__search-button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(127, 255, 212, 0.733);
+    margin-left: 15px;
+}
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.main-wrapper__weather-data strong{
+color: rgba(115, 117, 238, 0.872);
+}
+.main-wrapper__details {
+    color: rgba(0,0,0,0.5);
+    font-size: 16px;
+}
+.weather-data-cntainer {
+    display: flex;
+    font-size: 48px;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.weather-data-container__icon{
+    font-size: 30px;
+    margin-top: 15px;
+}
+.weather-data-container__value {
+font-size: 64px;
+margin: 0 2px 0px 4px;
+}
+.weather-data-container__unit {
+font-size: 24px;
+margin-top: 10px;
+}
+a {
+    color: rgba(33, 143, 106, 0.619);
+}
+footer {
+    border-top: 1px solid #a7becb;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
 }
