@@ -67,6 +67,28 @@ color: rgba(115, 117, 238, 0.872);
 a {
     color: rgba(33, 143, 106, 0.619);
 }
+.weather-forecast {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.weather-forecast-day {
+    align-items: center;
+    
+}
+.weather-forecast-temperature {
+    display: flex;
+    justify-content: center;
+}
+.weather-forecast-temperature-max {
+    margin-right: 5px;
+}
+.weather-forecast-temperature-min {
+   color: gray;
+}
+img {
+    width: 70px;
+}
 footer {
     border-top: 1px solid #a7becb25;
     padding-top: 30px;
