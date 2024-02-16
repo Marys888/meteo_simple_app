@@ -58,7 +58,39 @@ function handleSearchSubmit(event) {
     searchCity(inputElement.value);
 }
 
-const form = document.querySelector("#form");
+function showForecast () {
+    let days = ["Fri", "Sat", "San", "Mon", "Tue"];
+    let forecastHtml = "";
+
+    days.forEach(function(day) {
+        forecastHtml =     
+        forecastHtml +
+        `
+                <div class="weather-forecast-day">
+                    <div class="weather-forecast-date">${day}</div>
+                    <img 
+                        src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" 
+                        alt="forecast"
+                        class="weather-forecast-icon"
+                    >
+                    <div class="weather-forecast-temperature">
+                        <div class="weather-forecast-temperature-max">
+                            <strong>10º</strong>
+                        </div>
+                        <div class="weather-forecast-temperature-min">6º</div>
+                    </div>
+                </div>
+            
+      `;
+    }) ;
+
+    let forecastElement = document.querySelector("#forecast");
+    forecastElement.innerHTML = forecastHtml;
+}
+
+let form = document.querySelector("#form");
 form.addEventListener("submit", handleSearchSubmit);
 
 searchCity("kyiv");
+showForecast();
+

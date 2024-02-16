@@ -76,6 +76,9 @@ a {
     align-items: center;
     
 }
+.weather-forecast-date {
+text-align: center;
+}
 .weather-forecast-temperature {
     display: flex;
     justify-content: center;
