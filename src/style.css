@@ -85,9 +85,12 @@ text-align: center;
 }
 .weather-forecast-temperature-max {
     margin-right: 5px;
+    color: rgba(210, 70, 70, 0.779);
+    
 }
 .weather-forecast-temperature-min {
-   color: gray;
+   /* color: gray; */
+   color: rgba(115, 117, 238, 0.872);
 }
 img {
     width: 70px;
