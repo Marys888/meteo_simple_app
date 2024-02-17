@@ -74,6 +74,7 @@ a {
 }
 .weather-forecast-day {
     align-items: center;
+    color: rgba(0, 0, 0, 0.651);
     
 }
 .weather-forecast-date {
@@ -89,8 +90,8 @@ text-align: center;
     
 }
 .weather-forecast-temperature-min {
-   /* color: gray; */
-   color: rgba(115, 117, 238, 0.872);
+   color: rgba(44, 36, 36, 0.765);
+   /* color: rgba(115, 117, 238, 0.872); */
 }
 img {
     width: 70px;
